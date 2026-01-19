@@ -19,7 +19,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 .about {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -37,39 +36,358 @@ body {
     background-repeat: no-repeat;
 }
 
-/* ==========================================================================
+/* ========================
    Responsive Breakpoints
-   ========================================================================== */
+   ========================*/
 
 @media screen and (max-width: 576px) {
+    .container {
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
 
+    header .logo {
+        width: 150px;
+    }
+
+    #banner {
+        position: absolute;
+        margin-top: 0px;
+        min-height: 59vh;
+        width: 100%;
+        background: url(./images/hero-bg.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #banner .banner-content{
+        margin-top: -65px;
+    }
+    #banner .banner-text {
+        font-size: 16px !important;
+        margin-top: -146px;
+        margin-bottom: -11px;
+    }
+    #banner .banner-text h1{
+        margin-top: 150px;
+        margin-bottom: -65px;
+    }
+    #banner .banner-text span {
+        margin-left: -0.35rem;
+    }
+
+    #banner p {
+        font-size: 14px !important;
+        max-width: 300px;
+        margin-top: 65px;
+    }
+
+    #banner .banner-circle {
+        width: 200px;
+        margin-top: 20px;
+    }
+    #banner .hero-circle {
+        width: 100%;
+        margin-top: 120px;
+    }
+
+    #banner .badge {
+        width: auto;
+        padding: 6px 12px;
+        font-size: 10px;
+        top: 140px;
+        right: 0;
+    }
+
+    #banner .mic-wrapper {
+        top: 60px;
+        right: 20px;
+        width: 60px;
+    }
+
+    #banner .mic {
+        margin: 0 auto;
+        margin-top: 115px;
+        margin-right: 70px;
+        width: 60px;
+        margin-left: -45px;
+    }
+
+    .spotify-btn-container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .spotify-btn {
+        width: auto;
+        padding: 15px 22px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    .subscribe-btn {
+        width: auto;
+        padding: 15px 22px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .sub-btn {
+        background: none;
+        box-shadow: none;
+        width: auto;
+        padding: 0;
+        font-size: 0;
+    }
+
+    .sub-btn i {
+        display: none;
+    }
+
+    .sub-btn img {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        width: 24px;
+        height: 24px;
+    }
+
+    h1 {
+        font-size: 36px !important;
+    }
+    .about-content{
+        margin-top: 150px;
+    }
+    .about-content h2{
+        margin-top: -450px;
+        font-size: 32px !important;
+    }
+    .about-box {
+        padding: 50px;
+    }
+
+    .about-card h3 {
+        font-size: 32px !important;
+        font-weight: 800;
+    }
+
+    .about-card p {
+        font-size: 16px !important;
+        font-weight: 400;
+    }
+
+    .choose-content h2 {
+        font-size: 30px !important;
+        font-weight: 800;
+    }
+
+    .choose-content h2 span {
+        margin-left: -0.35rem;
+    }
+
+    .choose .choose-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .choose .choose-card>div {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .features-content h2 {
+        font-size: 32px !important;
+        font-weight: 800;
+    }
+
+    .features-content h2 span {
+        margin-left: 0.35rem;
+    }
+
+    .features-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features-card .play-btn {
+        opacity: 1;
+    }
+
+    .host-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .host-content .group:hover>div {
+        border-color: rgba(0, 255, 136, 0.3);
+    }
+
+    .host-content h4 {
+        margin-bottom: 5px;
+        font-size: 32px !important;
+        text-align: center;
+    }
+
+    .host-content p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .host-content .justify-start {
+        justify-content: center;
+    }
+
+    .footer {
+        position: absolute;
+        margin-top: 20px;
+        width: 100%;
+        height: 35vh;
+        background: url(./images/footer-bg.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #200F41;
+    }
+    .footer-logo {
+        margin-top: -40px;
+    }
+    .footer-link {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-
-}
-
-@media screen and (min-width: 993px) and (max-width: 1200px) { 
-    .container{
+    .container {
         width: calc(100% - 200px);
         max-width: 1600px;
         margin: 0 auto;
     }
-    .about p .about-text{
-        width: 772px;
+
+    nav ul {
+        display: none;
     }
-    .features-card{
-        display: grid;   
-        grid-template-columns: repeat(2, 1fr);
+
+    .sub-btn {
+        background: none;
+        box-shadow: none;
+        width: auto;
+        padding: 0;
+        font-size: 0;
     }
-    .features-card .play-btn{
+
+    .sub-btn i {
+        display: none;
+    }
+
+    .sub-btn img {
+        display: block;
+        visibility: visible;
         opacity: 1;
+        width: 24px;
+        height: 24px;
     }
-    .host-content{
-        padding: 10px;
+
+    .choose .choose-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .choose .choose-card>div {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .features-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .host-content {
+        display: flex;
+        flex-direction: column;
         gap: 10px;
     }
-    .host-content h4{
-        
+
+    .host-content .group:hover>div {
+        border-color: none;
+    }
+
+    .footer {
+        background: url(./images/footer-bg.png);
+        background-size: contain;
+        background-color: #200F41;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .footer-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 350px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1440px) {
+    .container {
+        width: calc(100% - 200px);
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .about p .about-text {
+        width: 772px;
+    }
+
+    .features-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-card .play-btn {
+        opacity: 1;
+    }
+
+    .host-content {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .host-content h4 {
+        margin-bottom: -22px;
     }
 }
