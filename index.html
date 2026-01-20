@@ -24,9 +24,10 @@
                     <li><a href="#" class="hover:text-gray-100 transition-colors duration-300">Host</a></li>
                 </ul>
                 <button
-                    class="sub-btn bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white w-40 px-5 py-2 rounded-full font-semibold flex items-center justify-center gap-2 transition-all transform shadow-lg shadow-red-500/20">
-                    Subscribe<i class="fa-solid fa-arrow-right text-sm"></i>
-                    <img src="./images/hamburger-menu.png" alt="" class="visibility-hidden opacity-0">
+                    class="sub-btn group bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white w-40 px-5 py-2 rounded-full font-semibold flex items-center justify-center gap-2 transition-all transform shadow-lg shadow-red-500/20">
+                    Subscribe<i
+                        class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                    <img src="./images/hamburger-menu.png" alt="" class="visibility-hidden opacity-0 -ml-8">
                 </button>
             </div>
         </nav>
@@ -59,13 +60,16 @@
             </div>
             <div class="spotify-btn-container flex items-center justify-center gap-4 px-0">
                 <button
-                    class="spotify-btn bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-700 text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors">
-                    <img src="./images/spotify.png" class="w-6 h-6" alt="">Listen on Spotify
+                    class="spotify-btn group bg-gradient-to-tr from-yellow-400 via-pink-600 to-purple-700 text-white px-6 py-3 rounded-full font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_-5px_rgba(219,39,119,0.5)] active:scale-95">
+                    <img src="./images/spotify.png" class="w-6 h-6 group-hover:rotate-12 transition-transform"
+                        alt="">Listen on Spotify
                 </button>
                 <button
-                    class="subscribe-btn flex items-center justify-center gap-2 bg-transparent border border-[#00FF88] text-white px-6 py-3 rounded-full font-normal">
-                    <i class="fa-regular fa-envelope text-xl text-[#00FF88]"></i>
-                    <span class="text-[#00FF88] font-semibold">Subscribe</span>
+                    class="subscribe-btn group flex items-center justify-center gap-2 bg-transparent border border-[#00FF88] px-6 py-3 rounded-full font-normal transition-all duration-300 hover:bg-transparent hover:text-[#1A0B2E] hover:border-[#ffffff] hover:shadow-[0_0_20px_rgba(0,255,136,0.4)] active:scale-95">
+                    <i
+                        class="fa-regular fa-envelope text-xl text-[#00FF88] group-hover:text-[#ffffff] transition-colors"></i>
+                    <span
+                        class="text-[#00FF88] font-semibold group-hover:text-[#ffffff] transition-colors">Subscribe</span>
                 </button>
             </div>
         </section>

@@ -7,6 +7,10 @@ body {
     0%, 100% { transform: translateY(0) rotate(0deg); }
     50% { transform: translateY(-20px) rotate(5deg); }
 }
+    .mic {
+        animation: mic-float 1s ease-in-out infinite;
+        filter: drop-shadow(0 10px 15px rgba(0, 255, 136, 0.2));
+    }
 /* 
 @media screen and (min-width: 1024px) {
     .mic {
@@ -390,6 +394,14 @@ body {
         gap: 20px;
     }
 }
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 993px) and (max-width: 1440px) {
     .mic {
