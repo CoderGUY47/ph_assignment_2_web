@@ -289,6 +289,10 @@ body {
         margin-top: -40px;
     }
 
+    .footer-content {
+        margin-top: 20px;
+    }
+
     .footer-link {
         flex-wrap: wrap;
         justify-content: center;
